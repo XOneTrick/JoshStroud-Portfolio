@@ -29,8 +29,8 @@ function App() {
       <ContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Preview />} />
-            <Route path="/home" element={<Home />}>
+            
+            <Route path="/" element={<Home />}>
               <Route index element={<HomePage />} />
               <Route path="homePage" element={<HomePage />} />
               <Route path="resume" element={<Resume />} />
