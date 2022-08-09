@@ -7,7 +7,7 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
 import HomePage from "./Pages/Home/HomePage";
-import Portfilo from "./Pages/Portfilo/Portfilo";
+import Portfilo from "./Pages/Projects/Portfilo";
 import NotFound from "./Share/NotFound";
 
 function App() {

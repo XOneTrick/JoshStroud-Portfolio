@@ -71,17 +71,17 @@ const CommonPortfilo = ({ condition, items }) => {
                 </li>
                 <li
                   className={`${
-                    test === "Video" ? "text-[#FA5252]" : "fillter-btn"
+                    test === "Website" ? "text-[#FA5252]" : "fillter-btn"
                   } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Video")}
+                  onClick={() => handleSearch("Website")}
                 >
                   Websites
                 </li>
                 <li
                   className={`${
-                    test === "Web Design" ? "text-[#FA5252]" : "fillter-btn"
+                    test === "Phone App" ? "text-[#FA5252]" : "fillter-btn"
                   } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Web Design")}
+                  onClick={() => handleSearch("Phone App")}
                 >
                   Phone Applications
                 </li>

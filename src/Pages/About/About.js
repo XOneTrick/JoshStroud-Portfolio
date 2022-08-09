@@ -46,16 +46,14 @@ const About = () => {
                   {/* About me information */}
                   <div className=" md:mr-12 xl:mr-16">
                     <h3 className="text-4xl font-medium dark:text-white mb-2.5 ">
-                      Who am i?
+                      Who am I?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
                       I am a Junior Software Developer, i have graduated from
                       Auckland University of Technology in 2022.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
-                      My aim is to bring across your message and identity in the
-                      most creative way. I created web design for many famous
-                      brand companies.
+                      I am a self-motivated, hardworking and enthusiastic
                     </p>
                   </div>
 
