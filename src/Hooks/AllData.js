@@ -117,7 +117,7 @@ const AllData = () => {
       langages: "Typescript, React Native",
 
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!",
+        "Loo-Cate was a group project create as part of an assignment for a software developement paper at Auckland University of Technology. The aim of this project was to provide the user the best public toilets on their area as well as allow them to rate and comment on public toilets for others to see.",
     },
 
     {
@@ -132,7 +132,7 @@ const AllData = () => {
       link: "https://mapuche-art.web.app/home",
       linkText: "www.mapuche-art.com",
       description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
+        "This Website was comissioned by the Nagche school of Art and Crafts. It is a website that allows the school to show its products and services to the public as well as act as a marketplace for selling products from the students. It also provides the school with a tool and platform for better publicity. It was developed with React and Typescript.",
     },
 
     {

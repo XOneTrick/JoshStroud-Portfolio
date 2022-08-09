@@ -49,7 +49,7 @@ const About = () => {
                       Who am I?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
-                      I am a Junior Software Developer, i have graduated from
+                      I am a Junior Software Developer, I have graduated from
                       Auckland University of Technology in 2022.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
