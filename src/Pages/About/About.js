@@ -46,10 +46,7 @@ const About = () => {
                       Who am i?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
-                      I'm Creative Director and UI/UX Designer from Sydney,
-                      Australia, working in web development and print media. I
-                      enjoy turning complex problems into simple, beautiful and
-                      intuitive designs.
+                      I am a Junior Software Developer, i have graduated from Auckland University of Technology in 2022.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
                       My aim is to bring across your message and identity in the
@@ -86,7 +83,7 @@ const About = () => {
                             Location
                           </p>
                           <h6 className="font-medium dark:text-white">
-                            Hong kong china
+                            Auckland, New Zealand
                           </h6>
                         </div>
                       </div>
@@ -99,7 +96,7 @@ const About = () => {
                             Email
                           </p>
                           <h6 className="font-medium dark:text-white">
-                            example@mail.com
+                            joshua.stroud@me.com
                           </h6>
                         </div>
                       </div>
@@ -112,7 +109,7 @@ const About = () => {
                             Birthday
                           </p>
                           <h6 className="font-medium dark:text-white">
-                            May 27, 1990
+                            November 13, 1999
                           </h6>
                         </div>
                       </div>

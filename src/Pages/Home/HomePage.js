@@ -25,9 +25,9 @@ const HomePage = () => {
           alt=""
         />
         <h3 className="mt-6 mb-1 text-5xl font-semibold dark:text-white">
-          Monalisa Ashley
+          Joshua Stroud
         </h3>
-        <p className="mb-4 text-[#7B7B7B]">Ui/Ux Designer</p>
+        <p className="mb-4 text-[#7B7B7B]">Software Developer</p>
         {/* Avatar Info End */}
 
         {/* Social information start */}
