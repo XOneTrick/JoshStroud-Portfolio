@@ -143,10 +143,10 @@ const AllData = () => {
       bg: "#F4F4FF",
       client: "Myself",
       langages: "JavaScript, React",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
+      link: "https://joshstroud.netlify.app/home/homePage",
+      linkText: "www.joshstroudportfolio.com",
       description:
-        "This portfolio website was created using React and Javascript. The purpose is to provide and online presence of myself displaying my development abilities.",
+        "This portfolio website was created using React and Javascript. The purpose of this website is to provide and online presence of myself displaying my development abilities. I intend to kep it updated with future developments.",
     },
   ];
   const [data, setData] = useState(workItems);
