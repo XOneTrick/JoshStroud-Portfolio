@@ -24,7 +24,6 @@ import icon5 from "../assets/images/icons/icon-6.svg";
 // contact image
 import iconEmail from "../assets/images/contact/email 1.png";
 import iconMap from "../assets/images/contact/map 1.png";
-import { CgNotes } from "react-icons/cg";
 import { FaBlogger, FaRegUser, FaAward } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiCodesandbox } from "react-icons/fi";

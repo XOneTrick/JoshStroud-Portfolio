@@ -2,7 +2,6 @@ import React from "react";
 import {
   FaEnvelopeOpenText,
   FaMapMarkerAlt,
-  FaMobileAlt,
   FaRegCalendarAlt,
   FaLinkedinIn,
   FaArrowRight,
@@ -19,7 +18,7 @@ import PageTitle from "../../Share/PageTitle";
 
 const About = () => {
   const { local, experienceArray } = UseData();
-  const { lineArray, resumeArray } = UseData();
+  const { lineArray, } = UseData();
   return (
     <>
       <PageTitle title="About"></PageTitle>
