@@ -13,7 +13,7 @@ import aboutImage from "../../assets/images/about/about.jpg";
 import "../../Share/Style.css";
 import Footer from "../../Share/Footer";
 import UseData from "../../Hooks/UseData";
-import LineItem from "../Resume/LineItem";
+import LineItem from "./LineItem";
 import AboutCard from "./AboutCard";
 import PageTitle from "../../Share/PageTitle";
 
