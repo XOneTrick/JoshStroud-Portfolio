@@ -33,34 +33,7 @@ const HomePage = () => {
         {/* Social information start */}
         <div className="flex space-x-3">
           <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="socialbtn text-[#1773EA]">
-              <FaFacebookF />
-            </span>
-          </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="socialbtn text-[#1C9CEA]">
-              <FaTwitter />
-            </span>
-          </a>
-          <a
-            href="https://dribbble.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="socialbtn text-[#e14a84] ">
-              <FaDribbble />
-            </span>
-          </a>
-          <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/joshua-stroud-04885b138/"
             target="_blank"
             rel="noopener noreferrer"
           >

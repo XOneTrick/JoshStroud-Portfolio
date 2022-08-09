@@ -75,7 +75,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("Video")}
                 >
-                  Video
+                  Websites
                 </li>
                 <li
                   className={`${
@@ -83,7 +83,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("Web Design")}
                 >
-                  Web Design
+                  Phone Applications
                 </li>
                 <li
                   className={`${
@@ -91,15 +91,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("Logo")}
                 >
-                  Logo
-                </li>
-                <li
-                  className={`${
-                    test === "UI/UX" ? "text-[#FA5252]" : "fillter-btn"
-                  }  `}
-                  onClick={() => handleSearch("UI/UX")}
-                >
-                  Graphic Design
+                  University Work
                 </li>
               </ul>
 

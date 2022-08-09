@@ -5,8 +5,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContextProvider from "./Context/ContextProvider";
 import About from "./Pages/About/About";
 
-import Blog from "./Pages/Blog/Blog";
-
 import Contact from "./Pages/Contact/Contact";
 
 import Home from "./Pages/Home/Home";
@@ -14,10 +12,7 @@ import HomePage from "./Pages/Home/HomePage";
 
 import Portfilo from "./Pages/Portfilo/Portfilo";
 
-import Resume from "./Pages/Resume/Resume";
-
 import NotFound from "./Share/NotFound";
-import Preview from "./Share/Preview";
 
 function App() {
   useEffect(() => {
@@ -33,13 +28,12 @@ function App() {
             <Route path="/home" element={<Home />}>
               <Route index element={<HomePage />} />
               <Route path="homePage" element={<HomePage />} />
-              <Route path="resume" element={<Resume />} />
+              >
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
-              <Route path="blogs" element={<Blog />} />
               <Route path="works" element={<Portfilo />} />
             </Route>
-         
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

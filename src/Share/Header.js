@@ -3,7 +3,6 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import UseData from "../Hooks/UseData";
-import logo from "../assets/images/logo/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,50 +17,43 @@ const Header = () => {
       <div className="container">
         {/* Header menu start  */}
         <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]  ">
-          <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black ">
-            <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
-              <Link className="text-5xl font-semibold" to="/">
-                {/* website logo  */}
+          <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
+            <div className="flex items-center">
+              {/* dark mode icon */}
 
-                <img className="h-[26px] lg:h-[32px]" src={logo} alt="" />
-              </Link>
-              <div className="flex items-center">
-                {/* dark mode icon */}
+              {!check ? (
+                <span
+                  onClick={() => handle("dark")}
+                  className="bg-white w-[40px]  opacity-100 visible flex lg:opacity-0 lg:hidden  h-[40px]  rounded-full  justify-center items-center hover:bg-[#ef4060] text-black hover:text-white transition-all duration-300 ease-in-out cursor-pointer  ml-4"
+                >
+                  <FiMoon className="  text-3xl" />
+                </span>
+              ) : (
+                <span
+                  onClick={() => handle("light")}
+                  className="bg-[#4D4D4D] w-[40px] h-[40px] rounded-full  opacity-100 visible flex lg:opacity-0 lg:hidden justify-center items-center hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer  ml-4"
+                >
+                  <FiSun className="text-white text-3xl" />
+                </span>
+              )}
 
-                {!check ? (
-                  <span
-                    onClick={() => handle("dark")}
-                    className="bg-white w-[40px]  opacity-100 visible flex lg:opacity-0 lg:hidden  h-[40px]  rounded-full  justify-center items-center hover:bg-[#ef4060] text-black hover:text-white transition-all duration-300 ease-in-out cursor-pointer  ml-4"
-                  >
-                    <FiMoon className="  text-3xl" />
-                  </span>
-                ) : (
-                  <span
-                    onClick={() => handle("light")}
-                    className="bg-[#4D4D4D] w-[40px] h-[40px] rounded-full  opacity-100 visible flex lg:opacity-0 lg:hidden justify-center items-center hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer  ml-4"
-                  >
-                    <FiSun className="text-white text-3xl" />
-                  </span>
-                )}
+              {/* mobile menu icon */}
 
-                {/* mobile menu icon */}
-
-                {!menuOpen ? (
-                  <span
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    className="lg:opacity-0 lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white text-3xl ml-3 "
-                  >
-                    <AiOutlineMenu />
-                  </span>
-                ) : (
-                  <span
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    className="lg:opacity-0 cursor-pointer lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-white text-3xl ml-3 "
-                  >
-                    <AiOutlineClose />
-                  </span>
-                )}
-              </div>
+              {!menuOpen ? (
+                <span
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  className="lg:opacity-0 lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white text-3xl ml-3 "
+                >
+                  <AiOutlineMenu />
+                </span>
+              ) : (
+                <span
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  className="lg:opacity-0 cursor-pointer lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-white text-3xl ml-3 "
+                >
+                  <AiOutlineClose />
+                </span>
+              )}
             </div>
           </div>
           <nav

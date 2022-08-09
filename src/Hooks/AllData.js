@@ -353,23 +353,12 @@ const AllData = () => {
       icon: <FaRegUser />,
     },
     {
-      id: "06",
-      name: "Resume",
-      link: "/home/resume",
-      icon: <CgNotes />,
-    },
-    {
       id: "03",
       name: "Works",
       link: "/home/works",
       icon: <FiCodesandbox />,
     },
-    {
-      id: "04",
-      name: "Blogs",
-      link: "/home/blogs",
-      icon: <FaBlogger />,
-    },
+
     {
       id: "05",
       name: "Contact",
@@ -388,24 +377,18 @@ const AllData = () => {
     },
     {
       id: "02",
-      name: "Resume",
-      link: "/homeTwo/resume",
-      icon: <CgNotes />,
-    },
-    {
-      id: "03",
       name: "Works",
       link: "/homeTwo/works",
       icon: <FiCodesandbox />,
     },
     {
-      id: "04",
+      id: "03",
       name: "Blogs",
       link: "/homeTwo/blogs",
       icon: <FaBlogger />,
     },
     {
-      id: "05",
+      id: "04",
       name: "Contact",
       link: "/homeTwo/contact",
       icon: <RiContactsBookLine />,
@@ -430,14 +413,6 @@ const AllData = () => {
   const experienceArray = [
     {
       id: "1",
-      icon: icon,
-      title: "Ui/Ux Design",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
-      color: "#D566FF",
-      bg: "#FCF4FF",
-    },
-    {
-      id: "2",
       icon: icon1,
       title: "App Development",
       des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
@@ -445,23 +420,7 @@ const AllData = () => {
       bg: "#FEFAF0",
     },
     {
-      id: "3",
-      icon: icon2,
-      title: "Photography",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
-      color: "#8774FF",
-      bg: "#FCF4FF",
-    },
-    {
-      id: "4",
-      icon: icon3,
-      title: "Photography",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
-      color: "#FF6080",
-      bg: "#FFF4F4",
-    },
-    {
-      id: "5",
+      id: "2",
       icon: icon4,
       title: "Managment",
       des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
@@ -469,7 +428,7 @@ const AllData = () => {
       bg: "#FFF0F8",
     },
     {
-      id: "6",
+      id: "3",
       icon: icon5,
       title: "Web Development",
       des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
@@ -576,27 +535,19 @@ const AllData = () => {
   // Personal information for contact pages
   const contactArray = [
     {
-      id: "01",
-      icon: iconPhone,
-      title: "Phone ",
-      item1: "+452 666 386",
-      item2: "+452 666 386",
-      bg: "#FCF4FF",
-    },
-    {
       id: "02",
       icon: iconEmail,
       title: "Email ",
-      item1: "support@gmail.com",
-      item2: "example@gmail.com",
+      item1: "joshua.stroud@me.com",
+
       bg: "#EEFBFF",
     },
     {
       id: "03",
       icon: iconMap,
       title: "Address ",
-      item1: "Maount View, Oval",
-      item2: "Road, New York, USA",
+      item1: "Sandringham",
+      item2: "Auckland, New Zealand",
       bg: "#F2F4FF",
     },
   ];
