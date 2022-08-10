@@ -144,7 +144,7 @@ const About = () => {
               <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
                 <div className="col-span-1">
                   <h4 className="text-5xl dark:text-white font-medium mb-6">
-                    Working Skills
+                    language comprehension
                   </h4>
 
                   {/* experience percent items */}
@@ -155,7 +155,7 @@ const About = () => {
                 </div>
                 <div className="col-span-1">
                   <h4 className="text-5xl dark:text-white font-medium mb-8">
-                    Knowledges
+                    Personal Attributes
                   </h4>
 
                   {/* Knowledges items */}
