@@ -156,26 +156,26 @@ const AllData = () => {
     {
       id: "01",
       name: "Home",
-      link: "/home/homePage",
+      link: "/homePage",
       icon: <AiOutlineHome />,
     },
     {
       id: "02",
       name: "About",
-      link: "/home/about",
+      link: "/about",
       icon: <FaRegUser />,
     },
     {
       id: "03",
       name: "Works",
-      link: "/home/works",
+      link: "/works",
       icon: <FiCodesandbox />,
     },
 
     {
       id: "05",
       name: "Contact",
-      link: "/home/contact",
+      link: "/contact",
       icon: <RiContactsBookLine />,
     },
   ];
