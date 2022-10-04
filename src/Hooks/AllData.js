@@ -228,7 +228,8 @@ const AllData = () => {
       id: "1",
       icon: icon1,
       title: "App Development",
-      des: "I have created one mobile application whilst at university, this app was called 'Loo-Cate' and helped users find the best public toilets near them!.",
+      des:
+        "I have created one mobile application whilst at university, this app was called 'Loo-Cate' and helped users find the best public toilets near them!.",
       color: "#DDA10C",
       bg: "#FEFAF0",
     },
@@ -236,7 +237,8 @@ const AllData = () => {
       id: "2",
       icon: icon4,
       title: "Managment",
-      des: "During my time at university, i managed and lead multiple teams during multiple group projects.",
+      des:
+        "During my time at university, I managed and lead multiple teams during multiple group projects.",
       color: "#FF75D8",
       bg: "#FFF0F8",
     },
@@ -244,76 +246,10 @@ const AllData = () => {
       id: "3",
       icon: icon5,
       title: "Web Development",
-      des: "I was part of the development team for creating the Mapuche School of Art and Crafts website, this was a great experience and I learnt a lot about web development.",
+      des:
+        "I was part of the development team for creating the Mapuche School of Art and Crafts website, this was a great experience and I developed my web development skills.",
       color: "#269FFF",
       bg: "#F3FAFF",
-    },
-  ];
-
-  // Resume items for Resume page
-  const resumeArray = [
-    {
-      type: "Education",
-      icon: MdOutlineSchool,
-      id: "01",
-      date: "2021-2023",
-      title: "Ph.D in Horriblensess ",
-      place: "ABC University, Los Angeles, CA",
-      bg: "#FFF4F4",
-
-      id1: "02",
-      date1: "2019 - Present",
-      title1: "Sr. Software Tester",
-      place1: "Google Inc.",
-      bg1: "#FFF1FB",
-
-      id2: "03",
-      date2: "2021",
-      title2: "Best Developer ",
-      place2: "University Of Melbourne, NA",
-      bg2: "#FFF4F4",
-    },
-    {
-      type: "Experience",
-      icon: MdOutlineBusinessCenter,
-      id: "04",
-      date: "2017-2021",
-      title: "Computer Science",
-      place: "Imperialize Technical Institute",
-      bg: "#EEF5FA",
-
-      id1: "05",
-      date1: "2015-2017",
-      title1: "Cr. Web Developer",
-      place1: "ib-themes ltd.",
-      bg1: "#F2F4FF",
-
-      id2: "06",
-      date2: "2008",
-      title2: "Best Writter",
-      place2: "Online Typodev Soluation Ltd.",
-      bg2: "#EEF5FA",
-    },
-    {
-      type: "Awards",
-      icon: FaAward,
-      id: "07",
-      date: "2015-2017",
-      title: "  Graphic Designer",
-      place: "Web Graphy, Los Angeles, CA",
-      bg: "#FCF4FF",
-
-      id1: "08",
-      date1: "2014 - 2015",
-      title1: "Jr. Web Developer",
-      place1: "Creative Gigs.",
-      bg1: "#FCF9F2",
-
-      id2: "09",
-      date2: "2015-2017",
-      title2: "Best Freelancer",
-      place2: "Fiver & Upwork Level 2 & Top Rated",
-      bg2: "#FCF4FF",
     },
   ];
 
