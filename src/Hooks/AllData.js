@@ -11,13 +11,6 @@ import workSmall1 from "../assets/images/work_images/small/1.jpg";
 import workSmall2 from "../assets/images/work_images/small/2.jpg";
 import workSmall3 from "../assets/images/work_images/small/3.jpg";
 
-import img1 from "../assets/images/slider/brand-1.png";
-import img2 from "../assets/images/slider/brand-2.png";
-import img3 from "../assets/images/slider/brand-3.png";
-import img4 from "../assets/images/slider/brand-4.png";
-import img5 from "../assets/images/slider/brand-5.png";
-//  icon use as img here
-
 import icon1 from "../assets/images/icons/icon-2.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
 import icon5 from "../assets/images/icons/icon-6.svg";
@@ -228,8 +221,7 @@ const AllData = () => {
       id: "1",
       icon: icon1,
       title: "App Development",
-      des:
-        "I have created one mobile application whilst at university, this app was called 'Loo-Cate' and helped users find the best public toilets near them!.",
+      des: "I have created one mobile application whilst at university, this app was called 'Loo-Cate' and helped users find the best public toilets near them!.",
       color: "#DDA10C",
       bg: "#FEFAF0",
     },
@@ -237,8 +229,7 @@ const AllData = () => {
       id: "2",
       icon: icon4,
       title: "Managment",
-      des:
-        "During my time at university, I managed and lead multiple teams during multiple group projects.",
+      des: "During my time at university, I managed and lead multiple teams during multiple group projects.",
       color: "#FF75D8",
       bg: "#FFF0F8",
     },
@@ -246,8 +237,7 @@ const AllData = () => {
       id: "3",
       icon: icon5,
       title: "Web Development",
-      des:
-        "I was part of the development team for creating the Mapuche School of Art and Crafts website, this was a great experience and I developed my web development skills.",
+      des: "I was part of the development team for creating the Mapuche School of Art and Crafts website, this was a great experience and I developed my web development skills.",
       color: "#269FFF",
       bg: "#F3FAFF",
     },
@@ -316,7 +306,6 @@ const AllData = () => {
     menuItemTwo,
     experienceArray,
     sliderImg,
-    resumeArray,
     lineArray,
     contactArray,
   };
