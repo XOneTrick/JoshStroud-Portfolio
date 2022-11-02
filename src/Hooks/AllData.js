@@ -17,13 +17,11 @@ import icon5 from "../assets/images/icons/icon-6.svg";
 // contact image
 import iconEmail from "../assets/images/contact/email 1.png";
 import iconMap from "../assets/images/contact/map 1.png";
-import { FaBlogger, FaRegUser, FaAward } from "react-icons/fa";
+import { FaBlogger, FaRegUser } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiCodesandbox } from "react-icons/fi";
 import { RiContactsBookLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
-
-import { MdOutlineBusinessCenter, MdOutlineSchool } from "react-icons/md";
 
 const AllData = () => {
   const [check, setCheck] = useState(false);
