@@ -201,20 +201,6 @@ const AllData = () => {
     },
   ];
 
-  // Slider image for Clients
-  const sliderImg = [
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-  ];
-
   // experience items for about page
   const experienceArray = [
     {
@@ -305,7 +291,6 @@ const AllData = () => {
     NavLink,
     menuItemTwo,
     experienceArray,
-    sliderImg,
     lineArray,
     contactArray,
   };
