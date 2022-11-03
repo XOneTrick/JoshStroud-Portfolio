@@ -141,8 +141,8 @@ const About = () => {
                 ))}
               </div>
             </div>
-
-            <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20">
+            {/* TODO: Style to fit container, currently gray overhangs page and too many buttons will push the edge of page*/}
+            <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20"> 
               <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
                 <div className="col-span-1">
                   {/* <h4 className="text-5xl dark:text-white font-medium mb-6">
