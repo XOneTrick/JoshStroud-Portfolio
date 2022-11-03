@@ -12,13 +12,13 @@ import aboutImage from "../../assets/images/about/about.jpg";
 import "../../Share/Style.css";
 import Footer from "../../Share/Footer";
 import UseData from "../../Hooks/UseData";
-import LineItem from "./LineItem";
+//import LineItem from "./LineItem";
 import AboutCard from "./AboutCard";
 import PageTitle from "../../Share/PageTitle";
 
 const About = () => {
   const { local, experienceArray } = UseData();
-  const { lineArray, } = UseData();
+  //const { lineArray, } = UseData();
   return (
     <>
       <PageTitle title="About"></PageTitle>
@@ -48,8 +48,10 @@ const About = () => {
                       Who am I?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
-                      I am a Junior Software Developer, I have graduated from
-                      Auckland University of Technology in 2022.
+                    My current career goal is to work full-time in the IT and telecommunications industry and to build on
+                    the experience I gained at university. My overall career goal is to eventually move into a project
+                    leadership role. I was fortunate enough to have a leadership role within many of my papers at
+                    University and loved bringing the team together and the work we created.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
                       I am a self-motivated, hardworking and enthusiastic
@@ -143,26 +145,34 @@ const About = () => {
             <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20">
               <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
                 <div className="col-span-1">
-                  <h4 className="text-5xl dark:text-white font-medium mb-6">
+                  {/* <h4 className="text-5xl dark:text-white font-medium mb-6">
                     language comprehension
                   </h4>
 
-                  {/* experience percent items */}
+                  
 
                   {lineArray.map((item, i) => (
                     <LineItem item={item} key={i} />
                   ))}
-                </div>
+                </div> */}
                 <div className="col-span-1">
                   <h4 className="text-5xl dark:text-white font-medium mb-8">
-                    Personal Attributes
+                    Language and Skill comprehension
                   </h4>
 
                   {/* Knowledges items */}
 
-                  <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-4 flex-wrap">
-                    <button className="resume-btn">Time Management</button>
-                    <button className="resume-btn">Flexibility</button>
+                  <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6">
+                    <button className="resume-btn">JavaScript</button>
+                    <button className="resume-btn">TypeScript</button>
+                    <button className="resume-btn">C#</button>
+                    <button className="resume-btn">HTML</button>
+                    <button className="resume-btn">CSS</button>
+                    <button className="resume-btn">SQL</button>
+                    <button className="resume-btn">Agile</button>
+                    <button className="resume-btn">React</button>
+
+
                   </div>
                 </div>
               </div>
@@ -171,6 +181,7 @@ const About = () => {
             {/* Common Footer call here */}
             <Footer condition={false} bg={"#FFFF"} />
           </div>
+        </div>
         </div>
       </section>
     </>
