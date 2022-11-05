@@ -15,7 +15,7 @@ const HomePage = () => {
         data-aos="fade"
       >
         <img
-          className="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px]"
+          className="rounded-full w-[300px] h-[300px] 2xl:w-[330px] 2xl:h-[330px]"
           src={userImage}
           alt=""
         />
