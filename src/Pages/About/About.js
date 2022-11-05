@@ -48,10 +48,13 @@ const About = () => {
                       Who am I?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
-                    My current career goal is to work full-time in the IT and telecommunications industry and to build on
-                    the experience I gained at university. My overall career goal is to eventually move into a project
-                    leadership role. I was fortunate enough to have a leadership role within many of my papers at
-                    University and loved bringing the team together and the work we created.
+                      My current career goal is to work full-time in the IT and
+                      telecommunications industry and to build on the experience
+                      I gained at university. My overall career goal is to
+                      eventually move into a project leadership role. I was
+                      fortunate enough to have a leadership role within many of
+                      my papers at University and loved bringing the team
+                      together and the work we created.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
                       I am a self-motivated, hardworking and enthusiastic
@@ -141,39 +144,24 @@ const About = () => {
                 ))}
               </div>
             </div>
-            {/* TODO: Style to fit container, currently gray overhangs page and too many buttons will push the edge of page*/}
-            <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20"> 
-              <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
-                <div className="col-span-1">
-                  {/* <h4 className="text-5xl dark:text-white font-medium mb-6">
-                    language comprehension
-                  </h4>
 
-                  
+            <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20">
+              <div className="col-span-1 ">
+                <h4 className="text-5xl dark:text-white font-medium mb-8">
+                  Language and Skill comprehension
+                </h4>
 
-                  {lineArray.map((item, i) => (
-                    <LineItem item={item} key={i} />
-                  ))}
-                </div> */}
-                <div className="col-span-1">
-                  <h4 className="text-5xl dark:text-white font-medium mb-8">
-                    Language and Skill comprehension
-                  </h4>
+                {/* Knowledges items */}
 
-                  {/* Knowledges items */}
-
-                  <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6">
-                    <button className="resume-btn">JavaScript</button>
-                    <button className="resume-btn">TypeScript</button>
-                    <button className="resume-btn">C#</button>
-                    <button className="resume-btn">HTML</button>
-                    <button className="resume-btn">CSS</button>
-                    <button className="resume-btn">SQL</button>
-                    <button className="resume-btn">Agile</button>
-                    <button className="resume-btn">React</button>
-
-
-                  </div>
+                <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6 flex-wrap">
+                  <button className="resume-btn">JavaScript</button>
+                  <button className="resume-btn">TypeScript</button>
+                  <button className="resume-btn">C#</button>
+                  <button className="resume-btn">HTML</button>
+                  <button className="resume-btn">CSS</button>
+                  <button className="resume-btn">SQL</button>
+                  <button className="resume-btn">Agile</button>
+                  <button className="resume-btn">React</button>
                 </div>
               </div>
             </div>
@@ -181,7 +169,6 @@ const About = () => {
             {/* Common Footer call here */}
             <Footer condition={false} bg={"#FFFF"} />
           </div>
-        </div>
         </div>
       </section>
     </>
