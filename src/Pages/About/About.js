@@ -154,14 +154,18 @@ const About = () => {
                 {/* Knowledges items */}
 
                 <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6 flex-wrap">
-                  <button className="resume-btn">JavaScript</button>
-                  <button className="resume-btn">TypeScript</button>
-                  <button className="resume-btn">C#</button>
-                  <button className="resume-btn">HTML</button>
-                  <button className="resume-btn">CSS</button>
-                  <button className="resume-btn">SQL</button>
+                  <button className="javascript-btn">JavaScript</button>
+                  <button className="typescript-btn">TypeScript</button>
+                  <button className="c-btn">C#</button>
+                  <button className="html-btn">HTML</button>
+                  <button className="css-btn">CSS</button>
+                  <button className="sql-btn">SQL</button>
+                  <button className="react-btn">React Framework</button>
+                </div>
+                <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6 flex-wrap mt-6">
                   <button className="resume-btn">Agile</button>
-                  <button className="resume-btn">React</button>
+                  <button className="resume-btn">CI/CD</button>
+                  <button className="resume-btn">Version Control</button>
                 </div>
               </div>
             </div>
