@@ -20,7 +20,28 @@ html {
     @apply text-7xl font-bold font-robotoSlab inline-block relative after:absolute  transform after:-translate-y-[50%] after:bg-gradient-to-r from-[#FA5252] to-[#DD2476] after:h-0.5 after:rounded-md after:content-[""] md:after:w-48  after:top-[50%] dark:text-white;
   }
   .resume-btn {
-    @apply bg-[#EDF2F2] cursor-default px-5 py-2 rounded-lg  text-gray-lite dark:bg-[#1C1C1C] dark:text-[#A6A6A6];
+    @apply bg-[#EDF2F2] cursor-default px-5 py-2 rounded-lg  text-gray-lite dark:bg-[#1C1C1C] dark:text-[#FFE3DD];
+  }
+  .javascript-btn {
+    @apply bg-[#F0DB4F] cursor-default px-5 py-2 rounded-lg  text-[#323330] dark:bg-[#F0DB4F] dark:text-[#323330];
+  }
+  .typescript-btn {
+    @apply bg-[#007acc] cursor-default px-5 py-2 rounded-lg  text-[#ffffff] dark:bg-[#007acc] dark:text-[#ffffff];
+  }
+  .c-btn {
+    @apply bg-[#682876] cursor-default px-5 py-2 rounded-lg  text-[#fff] dark:bg-[#682876] dark:text-[#fff];
+  }
+  .html-btn {
+    @apply bg-[#f06529] cursor-default px-5 py-2 rounded-lg  text-[#fff] dark:bg-[#f06529] dark:text-[#fff];
+  }
+  .css-btn {
+    @apply bg-[#264de4] cursor-default px-5 py-2 rounded-lg  text-[#fff] dark:bg-[#264de4] dark:text-[#fff];
+  }
+  .sql-btn {
+    @apply bg-[#F29111] cursor-default px-5 py-2 rounded-lg  text-[#fff] dark:bg-[#F29111] dark:text-[#fff];
+  }
+  .react-btn {
+    @apply bg-[#61DBFB] cursor-default px-5 py-2 rounded-lg  text-[#282C34] dark:bg-[#61DBFB] dark:text-[#282C34];
   }
   .socialbtn {
     @apply w-10 h-10 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]  flex justify-center items-center  hover:text-white transition-colors duration-300  ease-in-out bg-[#F3F6F6] dark:bg-[#212425];
