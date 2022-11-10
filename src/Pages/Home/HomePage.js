@@ -19,10 +19,12 @@ const HomePage = () => {
           src={userImage}
           alt=""
         />
-        <h3 className="mt-6 mb-1 text-5xl font-semibold dark:text-white">
+        <h2 className="mt-6 mb-1 text-7xl font-kanit font-semibold dark:text-white">
           Joshua Stroud
-        </h3>
-        <p className="mb-4 text-[#7B7B7B]">Software Developer</p>
+        </h2>
+        <p className="mb-4 font-ubuntu text-2xl italic text-[#666666]  dark:text-[#acacac]">
+          Software Developer
+        </p>
         {/* Avatar Info End */}
 
         {/* Social information start */}

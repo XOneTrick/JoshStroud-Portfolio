@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 // for work_images
 import work1 from "../assets/images/work_images/1.jpg";
-
 import work2 from "../assets/images/work_images/2.jpg";
-
 import work3 from "../assets/images/work_images/3.jpg";
 
 // works small images
@@ -105,7 +103,7 @@ const AllData = () => {
       bg: "#FFF0F0",
       client: "AUT",
       langages: "Typescript, React Native",
-
+      linkText: "Unavailable",
       description:
         "Loo-Cate was a group project create as part of an assignment for a software developement paper at Auckland University of Technology. The aim of this project was to provide the user the best public toilets on their area as well as allow them to rate and comment on public toilets for others to see.",
     },

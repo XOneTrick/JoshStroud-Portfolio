@@ -133,7 +133,7 @@ const About = () => {
             </div>
 
             <div className="  pb-12 ">
-              <h3 className="text-[35px] dark:text-white font-medium pb-5">
+              <h3 className="text-[35px] dark:text-white font-medium pb-5 after-effect after:left-52 mt-12 lg:mt-0 ">
                 What I do!
               </h3>
               <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
@@ -145,7 +145,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20">
+            <div className="container bg-color-810 dark:bg-[#1c1b1b] py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-md">
               <div className="col-span-1 ">
                 <h4 className="text-5xl dark:text-white font-medium mb-8">
                   Language and Skill comprehension
