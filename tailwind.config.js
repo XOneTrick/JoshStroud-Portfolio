@@ -17,6 +17,9 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
       robotoSlab: ["Roboto Slab", "serif"],
+      secularOne: ["Secular One", "sans-serif"],
+      kanit: ["Kanit", "sans-serif"],
+      ubuntu: ["Ubuntu", "sans-serif"],
     },
     fontSize: {
       xs: ".75rem", // 12px
