@@ -7,10 +7,14 @@ const Footer = ({ bg, condition }) => {
     <footer
       style={{
         background: `${
-          local === "light" ? bg : condition ? "#212425" : "transparent"
+          local === "light"
+            ? "transparent"
+            : condition
+            ? "#212425"
+            : "transparent"
         }`,
       }}
-      className="overflow-hidden rounded-b-2xl"
+      className="overflow-hidden rounded-lg mt-4"
     >
       <p className="text-center py-6 text-gray-lite  dark:text-color-910 ">
         © 2022 All Rights Reserved by Joshua Stroud.

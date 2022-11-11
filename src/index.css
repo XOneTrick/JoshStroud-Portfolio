@@ -22,7 +22,7 @@ html {
     @apply text-7xl font-bold font-robotoSlab inline-block relative after:absolute  transform after:-translate-y-[50%] after:bg-gradient-to-r from-[#FA5252] to-[#DD2476] after:h-0.5 after:rounded-md after:content-[""] md:after:w-48  after:top-[50%] dark:text-white;
   }
   .resume-btn {
-    @apply bg-[#EDF2F2] cursor-default px-5 py-2 rounded-lg  text-gray-lite dark:bg-[#2e2e2e] dark:text-[#FFE3DD];
+    @apply bg-[#EDF2F2] cursor-default px-5 py-2 rounded-lg  text-gray-lite dark:bg-[#1d1c1c] dark:text-[#FFE3DD];
   }
   .javascript-btn {
     @apply bg-[#F0DB4F] cursor-default px-5 py-2 rounded-lg  text-[#323330] dark:bg-[#F0DB4F] dark:text-[#323330];

@@ -39,7 +39,10 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        homeBg: "url('/src/assets/images/background/bg.jpg')",
+        backgroundLight:
+          "linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 36%, rgba(254,118,135,1) 100%)",
+        backgroundDark:
+          "linear-gradient(104deg, rgba(38,0,153,1) 0%, rgba(38,42,92,1) 36%, rgba(53,43,200,1) 100%)",
         "homeBg-dark": "url('/src/assets/images/background/bg-dark.jpg')",
         "homeTwoBg-dark": "url('/src/assets/images/background/bgtwo.jpg')",
         previewBg: "url('/src/assets/images/preview/previewbg.png')",
@@ -59,7 +62,7 @@ module.exports = {
         "color-600": "#269FFF",
         "color-700": "#FEFAF0",
         "color-800": "#DDA10C",
-        "color-810": "#F8FBFB",
+        "color-810": "#f5f3f4",
         "color-820": "#8774FF",
         "color-830": "#FF75D8",
         "color-840": "#FF6786",

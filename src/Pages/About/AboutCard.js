@@ -2,10 +2,7 @@ import React from "react";
 
 const AboutCard = ({ item, local }) => {
   return (
-    <div
-      style={{ background: `${local === "dark" ? "transparent" : item?.bg}` }}
-      className="about-box dark:bg-transparent"
-    >
+    <div className="about-box bg-color-810 dark:bg-[#2f2e2e]">
       <img className="w-10 h-10 object-contain  block" src={item.icon} alt="" />
 
       <div className="space-y-2">

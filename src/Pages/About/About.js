@@ -25,7 +25,7 @@ const About = () => {
       {/* End pagetitle */}
 
       <section>
-        <div className="container lg:rounded-2xl bg-white dark:bg-[#111111]  px-4 sm:px-5 md:px-10 lg:px-20">
+        <div className="container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
           <div data-aos="fade">
             <div className="py-12">
               {/* Page Title */}
@@ -44,7 +44,7 @@ const About = () => {
                 <div className="col-span-12 md:col-span-8 space-y-2.5">
                   {/* About me information */}
                   <div className=" md:mr-12 xl:mr-16">
-                    <h3 className="text-4xl font-medium dark:text-white mb-2.5 ">
+                    <h3 className="text-7xl font-medium font-poppins dark:text-white mb-2.5 ">
                       Who am I?
                     </h3>
                     <p className="text-gray-lite  dark:text-color-910 leading-7">
@@ -145,7 +145,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="container bg-color-810 dark:bg-[#1c1b1b] py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-md">
+            <div className="container bg-color-810 dark:bg-[#2f2e2e] py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-lg">
               <div className="col-span-1 ">
                 <h4 className="text-5xl dark:text-white font-medium mb-8">
                   Language and Skill comprehension
@@ -171,7 +171,7 @@ const About = () => {
             </div>
 
             {/* Common Footer call here */}
-            <Footer condition={false} bg={"#FFFF"} />
+            <Footer condition={false} />
           </div>
         </div>
       </section>
