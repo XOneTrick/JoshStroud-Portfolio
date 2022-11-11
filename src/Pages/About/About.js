@@ -68,7 +68,7 @@ const About = () => {
                     </h3>
                     <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="flex">
-                        <span className="text-oriange dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
+                        <span className="text-oriange bg-transparent dark:bg-transparent shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
                           <FaLinkedinIn />
                         </span>
                         <div className="space-y-1">
@@ -87,7 +87,7 @@ const About = () => {
                         </div>
                       </div>
                       <div className="flex">
-                        <span className="text-oriange-lite dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
+                        <span className="text-oriange-lite bg-transparent dark:bg-transparent shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
                           <FaMapMarkerAlt />
                         </span>
                         <div className="space-y-1">
@@ -100,7 +100,7 @@ const About = () => {
                         </div>
                       </div>
                       <div className="flex">
-                        <span className="text-green dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
+                        <span className="text-green bg-transparent dark:bg-transparent shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
                           <FaEnvelopeOpenText />
                         </span>
                         <div className="space-y-1">
@@ -113,7 +113,7 @@ const About = () => {
                         </div>
                       </div>
                       <div className="flex">
-                        <span className="text-color-50 dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
+                        <span className="text-color-50 bg-transparent dark:bg-transparent shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
                           <FaRegCalendarAlt />
                         </span>
                         <div className="space-y-1">
@@ -145,7 +145,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="container bg-color-810 dark:bg-[#2f2e2e] py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-lg">
+            <div className="container bg-transparent dark:bg-transparent py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-lg">
               <div className="col-span-1 ">
                 <h4 className="text-5xl dark:text-white font-medium mb-8">
                   Language and Skill comprehension

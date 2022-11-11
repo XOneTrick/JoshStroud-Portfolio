@@ -40,9 +40,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         backgroundLight:
-          "linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 36%, rgba(254,118,135,1) 100%)",
+          "linear-gradient(210deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 64%, rgba(238,238,238,1) 83%, rgba(231,231,231,1) 93%, rgba(223,223,223,1) 100%)",
         backgroundDark:
-          "linear-gradient(104deg, rgba(38,0,153,1) 0%, rgba(38,42,92,1) 36%, rgba(53,43,200,1) 100%)",
+          "linear-gradient(210deg, rgba(27,22,101,1) 0%, rgba(38,42,92,1) 60%, rgba(153,0,98,1) 94%)",
         "homeBg-dark": "url('/src/assets/images/background/bg-dark.jpg')",
         "homeTwoBg-dark": "url('/src/assets/images/background/bgtwo.jpg')",
         previewBg: "url('/src/assets/images/preview/previewbg.png')",

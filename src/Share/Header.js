@@ -80,23 +80,23 @@ const Header = () => {
                     key={item.id}
                     activeClassName={`${
                       menuOpen
-                        ? " text-[#FA5252] dark:text-[#FA5252] "
-                        : " text-white  dark:text-white bg-gradient-to-r from-[#FA5252] to-[#DD2476] "
+                        ? " text-[#000000] dark:text-[#000000] "
+                        : " text-black border-2px dark:text-white bg-[#ffffff] dark:bg-[#000000]"
                     }`}
                     inactiveClassName={`${
                       menuOpen
                         ? " dark:hover:text-[#FA5252]"
-                        : "  dark:hover:text-white dark:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] "
+                        : "  dark:hover:text-white dark:bg-[#212425] hover:text-black hover:bg-[#A6A6A6] dark:text-[#A6A6A6] "
                     }  transition-all duration-300 ease-in-out `}
                     className={`${
                       a.pathname === "/home" && item.id === "01"
-                        ? "text-white linked dark:text-white bg-gradient-to-r from-[#FA5252] to-[#DD2476] "
+                        ? "text-black linked dark:text-white bg-gradient-to-r from-[#FA5252] to-[#DD2476] "
                         : " "
                     } ${
                       menuOpen
-                        ? " pl-4 dark:text-white    hover:text-[#FA5252] dark:hover:text-[#FA5252]  "
+                        ? " pl-4 dark:text-white text-black  hover:text-[#FA5252] dark:hover:text-[#FA5252]  "
                         : " rounded-md  cursor-pointer    font-poppins  bg-white text-gray-lite  "
-                    }  font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center  transition-all duration-300 ease-in-out `}
+                    }  font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out `}
                     to={item?.link}
                   >
                     <span className="mr-2 text-xl">{item?.icon}</span>{" "}

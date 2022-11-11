@@ -45,7 +45,7 @@ const CommonPortfilo = ({ condition, items }) => {
       <PageTitle title="Portfolio"></PageTitle>
       {/* End pagetitle */}
 
-      <section className="bg-white  lg:rounded-2xl dark:bg-[#111111]">
+      <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
         <div data-aos="fade">
           <div className="container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
@@ -111,7 +111,7 @@ const CommonPortfilo = ({ condition, items }) => {
                       local === "dark" ? "transparent" : item?.bg
                     }`,
                   }}
-                  className="rounded-lg p-6 dark:border-[2px] border-[#212425]"
+                  className="rounded-lg p-6 "
                   key={item.id}
                 >
                   <div className=" overflow-hidden rounded-lg">
@@ -209,9 +209,9 @@ const CommonPortfilo = ({ condition, items }) => {
           {/* End Portfolio */}
 
           {/* Common Footer call here*/}
-          <Footer condition={true} bg={"#F8FBFB"} />
         </div>
       </section>
+      <Footer condition={true} />
     </>
   );
 };

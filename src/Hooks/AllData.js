@@ -60,7 +60,7 @@ const AllData = () => {
       : document.documentElement.classList.remove("dark");
   };
 
-  // fillter portfilo data
+  // filter portfilo data
   const handleData = (text) => {
     if (text === "All") {
       setData(workItems);
