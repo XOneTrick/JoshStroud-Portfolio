@@ -12,7 +12,7 @@ const Contact = () => {
       <PageTitle title="Contact"></PageTitle>
       {/* End pagetitle */}
 
-      <section className="bg-white lg:rounded-2xl dark:bg-[#111111]">
+      <section className="bg-transparent lg:rounded-2xl dark:bg-transparent">
         <div data-aos="fade">
           <div className="container px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
@@ -61,7 +61,7 @@ const Contact = () => {
           {/* End contact */}
 
           {/* Common Footer call here */}
-          <Footer condition={true} bg={"#F8FBFB"} />
+          <Footer condition={false} />
         </div>
       </section>
     </>
