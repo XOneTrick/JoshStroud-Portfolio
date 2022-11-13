@@ -15,6 +15,7 @@ import UseData from "../../Hooks/UseData";
 //import LineItem from "./LineItem";
 import AboutCard from "./AboutCard";
 import PageTitle from "../../Share/PageTitle";
+//import { Parallax } from "react-scroll-parallax";
 
 const About = () => {
   const { local, experienceArray } = UseData();
@@ -29,9 +30,11 @@ const About = () => {
           <div data-aos="fade">
             <div className="py-12">
               {/* Page Title */}
+
               <h2 className="after-effect after:left-52 mt-12 lg:mt-0 ">
                 About Me
               </h2>
+
               <div className="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-center">
                 <div className="col-span-12 md:col-span-4">
                   {/* personal images for about page  */}
@@ -148,7 +151,7 @@ const About = () => {
             <div className="container bg-transparent dark:bg-transparent py-12 px-4 sm:px-5 md:px-10 lg:px-20 rounded-lg">
               <div className="col-span-1 ">
                 <h4 className="text-5xl dark:text-white font-medium mb-8">
-                  Language and Skill comprehension
+                  Language and Skill Comprehension
                 </h4>
 
                 {/* Knowledges items */}

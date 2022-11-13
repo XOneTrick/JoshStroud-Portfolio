@@ -9,10 +9,12 @@
 @layer base {
   html {
     @apply font-poppins;
+
   }
 }
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 @layer components {
   .about-box {
