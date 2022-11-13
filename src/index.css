@@ -13,6 +13,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 @layer components {
   .about-box {
