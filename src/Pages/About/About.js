@@ -5,7 +5,9 @@ import {
   FaRegCalendarAlt,
   FaLinkedinIn,
   FaArrowRight,
+  FaReact,
 } from "react-icons/fa";
+
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import aboutImage from "../../assets/images/about/about.jpg";
@@ -39,7 +41,7 @@ const About = () => {
                 <div className="col-span-12 md:col-span-4">
                   {/* personal images for about page  */}
                   <img
-                    className="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0"
+                    className="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0 shadow-2xl"
                     src={aboutImage}
                     alt=""
                   />
@@ -163,7 +165,10 @@ const About = () => {
                   <button className="html-btn">HTML</button>
                   <button className="css-btn">CSS</button>
                   <button className="sql-btn">SQL</button>
-                  <button className="react-btn">React Framework</button>
+                  <button className="react-btn">
+                    React Framework
+                    <FaReact className="flex m-1 top-3" />
+                  </button>
                 </div>
                 <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6 flex-wrap mt-6">
                   <button className="resume-btn">Agile</button>
