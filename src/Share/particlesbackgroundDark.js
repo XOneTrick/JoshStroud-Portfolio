@@ -1,4 +1,4 @@
-const backgroundLight = 
+const backgroundDight = 
 {
   particles: {
     number: {
@@ -110,4 +110,4 @@ const backgroundLight =
   retina_detect: true
 }
 
-export default backgroundLight;
+export default backgroundDight;

@@ -1,4 +1,6 @@
-import React from "react";
+import {React, useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 import {
   FaEnvelopeOpenText,
   FaMapMarkerAlt,
@@ -7,7 +9,7 @@ import {
   FaArrowRight,
   FaReact,
 } from "react-icons/fa";
-
+import backgroundLight from "../../Share/particlesbackgroundLight";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import aboutImage from "../../assets/images/about/about.jpg";
@@ -22,11 +24,28 @@ import PageTitle from "../../Share/PageTitle";
 const About = () => {
   const { local, experienceArray } = UseData();
   //const { lineArray, } = UseData();
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
   return (
     <>
       <PageTitle title="About"></PageTitle>
       {/* End pagetitle */}
-
+      <div><Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={backgroundLight}
+  />
       <section>
         <div className="container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
           <div data-aos="fade">
@@ -183,6 +202,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };
