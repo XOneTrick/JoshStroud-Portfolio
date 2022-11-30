@@ -9,13 +9,14 @@ const backgroundLight =
       }
     },
     color: {
-      value: "#232741"
+      value: ["#232741", "#FFFFFF"]
+     
     },
     shape: {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000"
+        color: "#FFFFFF"
       },
       polygon: {
         nb_sides: 5

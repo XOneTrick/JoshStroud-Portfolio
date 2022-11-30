@@ -38,16 +38,10 @@ module.exports = {
     },
 
     extend: {
-      backgroundImage: {
-        backgroundLight:
-          "linear-gradient(210deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 64%, rgba(238,238,238,1) 83%, rgba(231,231,231,1) 93%, rgba(223,223,223,1) 100%)",
-        backgroundDark:
-          "linear-gradient(210deg, rgba(20,15,45,1) 95%, rgba(26,19,60,1) 100%)",
-        "homeBg-dark": "url('/src/assets/images/background/bg-dark.jpg')",
-        "homeTwoBg-dark": "url('/src/assets/images/background/bgtwo.jpg')",
-        previewBg: "url('/src/assets/images/preview/previewbg.png')",
-      },
+
       colors: {
+        backgroundLight: '#FFFFFF',
+        backgroundDark: '#0F2027',
         gray: "#F3F6F6",
         "gray-lite": "#44566C",
         oriange: "#E93B81",

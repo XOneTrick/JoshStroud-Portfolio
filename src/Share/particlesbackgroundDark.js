@@ -1,4 +1,4 @@
-const backgroundDight = 
+const backgroundDark = 
 {
   particles: {
     number: {
@@ -9,7 +9,8 @@ const backgroundDight =
       }
     },
     color: {
-      value: "#232741"
+      value: "#FFFFFF"
+      value: ""
     },
     shape: {
       type: "circle",
@@ -110,4 +111,4 @@ const backgroundDight =
   retina_detect: true
 }
 
-export default backgroundDight;
+export default backgroundDark;
