@@ -20,6 +20,8 @@ module.exports = {
       secularOne: ["Secular One", "sans-serif"],
       kanit: ["Kanit", "sans-serif"],
       ubuntu: ["Ubuntu", "sans-serif"],
+      eczar: ["Eczar", "serif"],
+
     },
     fontSize: {
       xs: ".75rem", // 12px
@@ -33,7 +35,7 @@ module.exports = {
       "4xl": "1.5625rem", // 25px
       "5xl": "1.625rem", // 26px
       "6xl": "1.75rem", // 28px
-      "7xl": "2.5rem", // 40px
+      "7xl": "4rem", // 40px
       "8xl": "6rem", // 40px
     },
 
