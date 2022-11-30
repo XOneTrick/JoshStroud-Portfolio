@@ -38,13 +38,10 @@ module.exports = {
     },
 
     extend: {
-      backgroundImage: {
-        homeBg: "url('/src/assets/images/background/bg.jpg')",
-        "homeBg-dark": "url('/src/assets/images/background/bg-dark.jpg')",
-        "homeTwoBg-dark": "url('/src/assets/images/background/bgtwo.jpg')",
-        previewBg: "url('/src/assets/images/preview/previewbg.png')",
-      },
+
       colors: {
+        backgroundLight: '#FFFFFF',
+        backgroundDark: '#0F2027',
         gray: "#F3F6F6",
         "gray-lite": "#44566C",
         oriange: "#E93B81",
@@ -59,7 +56,7 @@ module.exports = {
         "color-600": "#269FFF",
         "color-700": "#FEFAF0",
         "color-800": "#DDA10C",
-        "color-810": "#F8FBFB",
+        "color-810": "#f5f3f4",
         "color-820": "#8774FF",
         "color-830": "#FF75D8",
         "color-840": "#FF6786",

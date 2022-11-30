@@ -1,18 +1,39 @@
-import React from "react";
+import {React, useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 import UseData from "../../Hooks/UseData";
 import Footer from "../../Share/Footer";
 import PageTitle from "../../Share/PageTitle";
 import CommonContact from "./CommonContact";
+import backgroundLight from "../../Share/particlesbackgroundLight";
+
 
 const Contact = () => {
   const { local, contactArray } = UseData();
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
 
   return (
     <>
       <PageTitle title="Contact"></PageTitle>
       {/* End pagetitle */}
-
-      <section className="bg-white lg:rounded-2xl dark:bg-[#111111]">
+      <div><Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={backgroundLight}
+  />
+      <section className="bg-transparent lg:rounded-2xl dark:bg-transparent">
         <div data-aos="fade">
           <div className="container px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
@@ -61,9 +82,10 @@ const Contact = () => {
           {/* End contact */}
 
           {/* Common Footer call here */}
-          <Footer condition={true} bg={"#F8FBFB"} />
+          <Footer condition={false} />
         </div>
       </section>
+      </div>
     </>
   );
 };

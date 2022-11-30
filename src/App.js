@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Home";
 import HomePage from "./Pages/Home/HomePage";
 import Portfilo from "./Pages/Projects/Portfilo";
 import NotFound from "./Share/NotFound";
+import Testing from "./Pages/Testing/testing";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/works" element={<Portfilo />} />
+              <Route path="/testing" element={<Testing />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
