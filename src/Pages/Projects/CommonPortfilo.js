@@ -1,4 +1,4 @@
-import {React, useCallback, useState} from "react";
+import { React, useCallback, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import Masonry from "react-masonry-css";
@@ -43,30 +43,30 @@ const CommonPortfilo = ({ condition, items }) => {
     500: 1,
   };
 
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
-}, []);
+  }, []);
 
-const particlesLoaded = useCallback(async container => {
+  const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
-}, []);
+  }, []);
 
   return (
     <>
       <PageTitle title="Portfolio"></PageTitle>
       {/* End pagetitle */}
-<div><Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={backgroundLight}
-  />
-      <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
-        <div data-aos="fade">
+      <div>
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={backgroundLight}
+        />
+        <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
           <div className="container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
               <h2 className="after-effect  after:left-48  lg:mt-0">
@@ -230,8 +230,7 @@ const particlesLoaded = useCallback(async container => {
 
           {/* Common Footer call here*/}
           <Footer condition={false} />
-        </div>
-      </section>
+        </section>
       </div>
     </>
   );

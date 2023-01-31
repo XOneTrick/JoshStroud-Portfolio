@@ -21,7 +21,6 @@ module.exports = {
       kanit: ["Kanit", "sans-serif"],
       ubuntu: ["Ubuntu", "sans-serif"],
       eczar: ["Eczar", "serif"],
-
     },
     fontSize: {
       xs: ".75rem", // 12px
@@ -35,15 +34,14 @@ module.exports = {
       "4xl": "1.5625rem", // 25px
       "5xl": "1.625rem", // 26px
       "6xl": "1.75rem", // 28px
-      "7xl": "4rem", // 40px
+      "7xl": "3rem", // 40px
       "8xl": "6rem", // 40px
     },
 
     extend: {
-
       colors: {
-        backgroundLight: '#FFFFFF',
-        backgroundDark: '#0F2027',
+        backgroundLight: "#FFFFFF",
+        backgroundDark: "#0F2027",
         gray: "#F3F6F6",
         "gray-lite": "#44566C",
         oriange: "#E93B81",

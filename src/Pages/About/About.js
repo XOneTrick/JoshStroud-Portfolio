@@ -1,4 +1,4 @@
-import {React, useCallback } from "react";
+import { React, useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import {
@@ -25,33 +25,31 @@ const About = () => {
   const { local, experienceArray } = UseData();
   //const { lineArray, } = UseData();
 
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
-}, []);
+  }, []);
 
-const particlesLoaded = useCallback(async container => {
+  const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
-}, []);
+  }, []);
   return (
     <>
       <PageTitle title="About"></PageTitle>
       {/* End pagetitle */}
-      <div><Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={backgroundLight}
-  />
-      <section>
-        <div className="container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
-          <div data-aos="fade">
+      <div>
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={backgroundLight}
+        />
+        <section>
+          <div className="container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
-              {/* Page Title */}
-
               <h2 className="after-effect after:left-52 mt-12 lg:mt-0 ">
                 About Me
               </h2>
@@ -151,7 +149,6 @@ const particlesLoaded = useCallback(async container => {
                       </div>
                     </div>
                   </div>
-                  {/* End personal information */}
                 </div>
               </div>
             </div>
@@ -197,11 +194,9 @@ const particlesLoaded = useCallback(async container => {
               </div>
             </div>
 
-            {/* Common Footer call here */}
             <Footer condition={false} />
           </div>
-        </div>
-      </section>
+        </section>
       </div>
     </>
   );

@@ -46,7 +46,6 @@ const CommonContact = ({ condition }) => {
 
   return (
     <div
-      data-aos="fade"
       className={`${
         condition
           ? "mx-4 md:mx-[60px] p-4 md:p-16 dark:border-[#212425] dark:border-2"
@@ -55,11 +54,11 @@ const CommonContact = ({ condition }) => {
     >
       <h3 className="text-4xl  ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
-          I'm always open to discussing product
+          I'm always open to discussing
         </span>
         <br />
         <span className="font-semibold dark:text-white">
-          design work or partnerships.
+          exciting opportunities or partnerships.
         </span>
       </h3>
 
