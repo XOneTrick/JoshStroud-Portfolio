@@ -40,7 +40,8 @@ const About = () => {
     <>
       <PageTitle title="About"></PageTitle>
       {/* End pagetitle */}
-      <div>
+      <div className="position : absolute; width:100%;
+  height:100%; z-index:-1;">
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -48,7 +49,7 @@ const About = () => {
           options={backgroundLight}
         />
         <section>
-          <div className="container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
+          <div className="relative container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
               <h2 className="after-effect after:left-52 mt-12 lg:mt-0 ">
                 About Me
@@ -79,7 +80,7 @@ const About = () => {
                       together and the work we created.
                     </p>
                     <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
-                      I am a self-motivated, hardworking and enthusiastic
+                      I am a self-motivated, hardworking and enthusiastic.
                     </p>
                   </div>
 

@@ -59,7 +59,8 @@ const CommonPortfilo = ({ condition, items }) => {
     <>
       <PageTitle title="Portfolio"></PageTitle>
       {/* End pagetitle */}
-      <div>
+      <div className="position : absolute; width:100%;
+  height:100%; z-index:-1;">
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -67,7 +68,7 @@ const CommonPortfilo = ({ condition, items }) => {
           options={backgroundLight}
         />
         <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
-          <div className="container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
+          <div className="relative container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
               <h2 className="after-effect  after:left-48  lg:mt-0">
                 Portfolio
@@ -82,7 +83,7 @@ const CommonPortfilo = ({ condition, items }) => {
               >
                 <li
                   className={`${
-                    test === "All" ? "text-[#FA5252]" : "fillter-btn "
+                    test === "All" ? "text-[#000000]" : "fillter-btn "
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("All")}
                 >
@@ -90,15 +91,15 @@ const CommonPortfilo = ({ condition, items }) => {
                 </li>
                 <li
                   className={`${
-                    test === "Website" ? "text-[#FA5252]" : "fillter-btn"
-                  } mr-4 md:mx-4`}
+                    test === "Website" ? "text-[#000000]" : "fillter-btn"
+                  } mr-4 md:mx-4 `}
                   onClick={() => handleSearch("Website")}
                 >
                   Websites
                 </li>
                 <li
                   className={`${
-                    test === "Phone App" ? "text-[#FA5252]" : "fillter-btn"
+                    test === "Phone App" ? "text-[#000000]" : "fillter-btn"
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("Phone App")}
                 >
@@ -106,7 +107,7 @@ const CommonPortfilo = ({ condition, items }) => {
                 </li>
                 <li
                   className={`${
-                    test === "Logo" ? "text-[#FA5252]" : "fillter-btn ml-0"
+                    test === "Logo" ? "text-[#000000]" : "fillter-btn ml-0"
                   } mr-4 md:mx-4`}
                   onClick={() => handleSearch("Logo")}
                 >
@@ -147,7 +148,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   </span>
                   <h2
                     onClick={() => handleModle(item.id)}
-                    className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#070707] dark:hover:text-[#FA5252] hover:text-5xl dark:text-white mt-2"
                   >
                     {item?.title}
                   </h2>
@@ -171,7 +172,7 @@ const CommonPortfilo = ({ condition, items }) => {
                     onClick={() => setIsOpen(false)}
                     className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
                   />
-                  <h2 className="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                  <h2 className="text-[#000000] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
                     {singleData.tag} Project
                   </h2>
                   <div className="grid grid-cols-1 lg:grid-cols-2 my-6">

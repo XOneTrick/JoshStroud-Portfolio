@@ -24,15 +24,17 @@ const HomePage = () => {
     <>
       <PageTitle title="Home"></PageTitle>
 
-      <div>
+      <div className="position : absolute; width:100%;
+  height:100%; z-index:-1;">
         <Particles
-          id="tsparticles"
+          id="position : absolute; width:100%;
+          height:100%; z-index:-1;"
           init={particlesInit}
           loaded={particlesLoaded}
           options={backgroundLight}
         />
 
-        <div className="flex  flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh]  xl:h-[71vh]  justify-center">
+        <div className="flex relative flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh]  xl:h-[71vh]  justify-center">
           <img
             className="rounded-full mt-12 mb-4 w-[300px] h-[300px] 2xl:w-[330px] 2xl:h-[330px]"
             src={userImage}

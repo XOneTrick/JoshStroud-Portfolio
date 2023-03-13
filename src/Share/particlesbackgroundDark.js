@@ -10,7 +10,6 @@ const backgroundDark =
     },
     color: {
       value: "#FFFFFF"
-      value: ""
     },
     shape: {
       type: "circle",

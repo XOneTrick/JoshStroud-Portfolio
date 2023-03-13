@@ -26,7 +26,8 @@ const Contact = () => {
     <>
       <PageTitle title="Contact"></PageTitle>
       {/* End pagetitle */}
-      <div>
+      <div className="position : absolute; width:100%;
+  height:100%; z-index:-1;">
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -34,7 +35,7 @@ const Contact = () => {
           options={backgroundLight}
         />
         <section className="bg-transparent lg:rounded-2xl dark:bg-transparent">
-          <div className="container px-4 sm:px-5 md:px-10 lg:px-20">
+          <div className="relative container px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
               <h2 className="after-effect after:left-40 mb-[40px]">Contact</h2>
               <div className="lg:flex gap-x-20">
