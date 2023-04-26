@@ -105,7 +105,7 @@ const AllData = () => {
       langages: "Typescript, React Native",
       linkText: "Unavailable",
       description:
-        "Loo-Cate was a group project create as part of an assignment for a software developement paper at Auckland University of Technology. The aim of this project was to provide the user the best public toilets on their area as well as allow them to rate and comment on public toilets for others to see.",
+        "The Loo-Cate application was developed as a collaborative project to fulfill an assignment for a software development course at Auckland University of Technology. Its primary aim was to enable users to locate the highest-quality public restrooms in their vicinity while also providing them with the opportunity to contribute to a public database of ratings and reviews.",
     },
 
     {
@@ -120,7 +120,7 @@ const AllData = () => {
       link: "https://mapuche-art.web.app/home",
       linkText: "www.mapuche-art.com",
       description:
-        "This Website was comissioned by the Nagche school of Art and Crafts. It is a website that allows the school to show its products and services to the public as well as act as a marketplace for selling products from the students. It also provides the school with a tool and platform for better publicity. It was developed with React and Typescript.",
+        "The Nagche School of Art and Crafts commissioned this website to showcase its products and services to the public and serve as a marketplace for student-produced goods. Additionally, the platform provides the school with an effective tool for publicity purposes. Developed using React and Typescript, this website serves as a powerful resource for promoting the school and its offerings while also facilitating sales transactions.",
     },
 
     {
@@ -135,7 +135,7 @@ const AllData = () => {
       link: "https://joshstroud.netlify.app/home/homePage",
       linkText: "www.joshstroudportfolio.com",
       description:
-        "This portfolio website was created using React and Javascript. The purpose of this website is to provide and online presence of myself displaying my development abilities. I intend to kep it updated with future developments.",
+        "Created with React and Javascript, this portfolio website is designed to establish an online presence for myself and showcase my development abilities. The website serves as a comprehensive platform for displaying my skills, experience, and accomplishments in a visually appealing manner. Furthermore, I aim to keep it updated with future developments to ensure that it accurately reflects my current expertise and capabilities.",
     },
   ];
   const [data, setData] = useState(workItems);
@@ -203,7 +203,7 @@ const AllData = () => {
       id: "1",
       icon: icon1,
       title: "App Development",
-      des: "I have created one mobile application whilst at university, this app was called 'Loo-Cate' and helped users find the best public toilets near them!.",
+      des: "During my time at university, I created a mobile application called 'Loo-Cate' using React Native. This app made it easy for users to locate the best public toilets near them.",
       color: "#DDA10C",
       bg: "#FEFAF0",
     },
@@ -211,7 +211,7 @@ const AllData = () => {
       id: "2",
       icon: icon4,
       title: "Managment",
-      des: "During my time at university, I managed and lead multiple teams during multiple group projects.",
+      des: "Throughout my university studies, I had the opportunity to manage and lead several teams across various group projects. These experiences enabled me to develop strong leadership skills and the ability to guide teams towards successful project outcomes.",
       color: "#FF75D8",
       bg: "#FFF0F8",
     },
@@ -219,7 +219,7 @@ const AllData = () => {
       id: "3",
       icon: icon5,
       title: "Web Development",
-      des: "I was part of the development team for creating the Mapuche School of Art and Crafts website, this was a great experience and I developed my web development skills.",
+      des: "I was part of the development team that created the website for the Mapuche School of Art and Crafts during my time at university, using TypeScript and React. This experience allowed me to not only improve my web development skills but also gain practical experience in working collaboratively on a real-world project.",
       color: "#269FFF",
       bg: "#F3FAFF",
     },

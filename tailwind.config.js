@@ -46,6 +46,7 @@ module.exports = {
         "gray-lite": "#44566C",
         oriange: "#E93B81",
         green: "#6AB5B9",
+        "test": "#FAFAFA",
         "oriange-lite": "#FD7590",
         "color-50": "#C17CEB",
         "color-100": "#FCF4FF",

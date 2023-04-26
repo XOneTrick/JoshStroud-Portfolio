@@ -40,8 +40,10 @@ const About = () => {
     <>
       <PageTitle title="About"></PageTitle>
       {/* End pagetitle */}
-      <div className="position : absolute; width:100%;
-  height:100%; z-index:-1;">
+      <div
+        className="position : absolute; width:100%;
+  height:100%; z-index:-1;"
+      >
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -50,16 +52,14 @@ const About = () => {
         />
         <section>
           <div className="relative container lg:rounded-2xl bg-transparent dark:bg-transparent  px-4 sm:px-5 md:px-10 lg:px-20">
-            <div className="py-12">
-              <h2 className="after-effect after:left-52 mt-12 lg:mt-0 ">
-                About Me
-              </h2>
+            
+          
 
               <div className="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-center">
-                <div className="col-span-12 md:col-span-4">
+                <div className="col-span-8 md:col-span-4">
                   {/* personal images for about page  */}
                   <img
-                    className="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0 shadow-2xl"
+                    className="w-full h-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] md:mb-0 shadow-2xl"
                     src={aboutImage}
                     alt=""
                   />
@@ -67,20 +67,28 @@ const About = () => {
                 <div className="col-span-12 md:col-span-8 space-y-2.5">
                   {/* About me information */}
                   <div className=" md:mr-12 xl:mr-16">
-                    <h3 className="text-7xl font-medium font-poppins dark:text-white mb-2.5 ">
+                    <h3 className="text-8xl md:text-4xl font-medium font-poppins dark:text-white mb-3 ">
                       Who am I?
                     </h3>
-                    <p className="text-gray-lite  dark:text-color-910 leading-7">
-                      My current career goal is to work full-time in the IT and
-                      telecommunications industry and to build on the experience
-                      I gained at university. My overall career goal is to
-                      eventually move into a project leadership role. I was
-                      fortunate enough to have a leadership role within many of
-                      my papers at University and loved bringing the team
-                      together and the work we created.
-                    </p>
-                    <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
-                      I am a self-motivated, hardworking and enthusiastic.
+                    <p className="text-gray-lite text-lg dark:text-color-910 leading-7">
+                      Hi there! My name is Josh, and I am a driven and motivated
+                      professional with a passion for IT and telecommunications.
+                      My current career goal is to secure a full-time position
+                      in this industry, where I can leverage the skills and
+                      experience I gained during my time at Auckland University of Technology.
+                      Throughout my academic career, I was fortunate enough to
+                      take on leadership roles in several group projects. These
+                      experiences ignited my love for bringing a team together
+                      to achieve a common goal, and I found myself thriving in
+                      these environments. As I look towards the future, my
+                      ultimate career goal is to transition into a project
+                      leadership role. I am excited about the prospect of
+                      managing and guiding teams towards successful project
+                      outcomes. I am always eager to learn and stay up-to-date
+                      with the latest industry trends and technologies. With a
+                      strong foundation in IT and telecommunications, I am
+                      confident in my ability to make a valuable contribution to
+                      any team.
                     </p>
                   </div>
 
@@ -150,7 +158,7 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                
               </div>
             </div>
 
@@ -182,9 +190,9 @@ const About = () => {
                   <button className="html-btn">HTML</button>
                   <button className="css-btn">CSS</button>
                   <button className="sql-btn">SQL</button>
-                  <button className="react-btn">
-                    React Framework
-                    <FaReact className="flex m-1 top-3" />
+                  <button className="react-btn flex items-center">
+  React Framework
+  <FaReact className="ml-3" />
                   </button>
                 </div>
                 <div className="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-6 flex-wrap mt-6">
