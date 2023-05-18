@@ -70,9 +70,9 @@ const CommonPortfilo = ({ condition, items }) => {
           options={backgroundLight}
         />
         <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
-          <div className="relative container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
+          <div className="relative container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
-              <h2 className="dark:text-white text-8xl font-poppins font-medium">
+              <h2 className="dark:text-white mt-6 text-4 sm:text-8xl font-poppins font-medium">
                 {" "}
                 {/*resize*/}
                 Portfolio
@@ -88,7 +88,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   <li
                     key={filter}
                     className={`${
-                      test === filter ? "text-[#ffffff]" : "fillter-btn"
+                      test === filter ? "text-[#000000] dark:text-white" : "filter-btn"
                     } ${
                       filter === "Phone App"
                         ? "mr-4 md:mx-4"
@@ -133,7 +133,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   </span>
                   <h2
                     onClick={() => handleModle(item.id)}
-                    className="font-medium cursor-pointer text-xl duration-300 transition hover:text-5xl dark:text-white mt-2"
+                    className="font-medium cursor-pointer text-xl duration-300 transition sm:hover:text-5xl hover:text-xxl dark:text-white mt-2"
                   >
                     {item?.title}
                   </h2>

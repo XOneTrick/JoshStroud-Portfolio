@@ -64,7 +64,7 @@ const About = () => {
               <div className="col-span-12 md:col-span-8 space-y-2.5 items-center">
                 {/* About me information */}
                 <div className=" md:mr-12 xl:mr-16">
-                  <h3 className="text-4xl sm:text-8xl font-medium font-poppins dark:text-white mb-3 ">
+                  <h3 className="text-4xl sm:text-8xl font-medium font-poppins mt-12 dark:text-white mb-3 ">
                     Who am I?
                   </h3>
                   <p className="text-gray-lite text-lg dark:text-color-910 leading-7">
