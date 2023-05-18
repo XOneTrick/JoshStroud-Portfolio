@@ -59,8 +59,10 @@ const CommonPortfilo = ({ condition, items }) => {
     <>
       <PageTitle title="Portfolio"></PageTitle>
       {/* End pagetitle */}
-      <div className="position : absolute; width:100%;
-  height:100%; z-index:-1;">
+      <div
+        className="position : absolute; width:100%;
+  height:100%; z-index:-1;"
+      >
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -69,23 +71,37 @@ const CommonPortfilo = ({ condition, items }) => {
         />
         <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
           <div className="relative container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
-         <div className="py-12">
-  <h2 className="dark:text-white text-8xl font-poppins font-medium">
-    Portfolio
-  </h2>
+            <div className="py-12">
+              <h2 className="dark:text-white text-8xl font-poppins font-medium">
+                {" "}
+                {/*resize*/}
+                Portfolio
+              </h2>
 
-  {/* Portfolio filter tab start */}
-  <ul className={`flex w-full justify-start md:justify-end flex-wrap font-medium mt-${item === 2 ? "30" : "40"}px`}>
-    {["All", "Website", "Phone App"].map((filter) => (
-      <li key={filter} className={`${test === filter ? "text-[#ffffff]" : "fillter-btn"} ${filter === "Phone App" ? "mr-4 md:mx-4" : "ml-0 mr-4 md:mx-4"}`} onClick={() => handleSearch(filter)}>
-        {filter === "Phone App" ? "Phone Applications" : filter}
-      </li>
-    ))}
-  </ul>
-  {/* Portfolio filter tab end */}
-</div>
-
-
+              {/* Portfolio filter tab start */}
+              <ul
+                className={`flex w-full justify-start md:justify-end flex-wrap font-medium mt-${
+                  item === 2 ? "30" : "40"
+                }px`}
+              >
+                {["All", "Website", "Phone App"].map((filter) => (
+                  <li
+                    key={filter}
+                    className={`${
+                      test === filter ? "text-[#ffffff]" : "fillter-btn"
+                    } ${
+                      filter === "Phone App"
+                        ? "mr-4 md:mx-4"
+                        : "ml-0 mr-4 md:mx-4"
+                    }`}
+                    onClick={() => handleSearch(filter)}
+                  >
+                    {filter === "Phone App" ? "Phone Applications" : filter}
+                  </li>
+                ))}
+              </ul>
+              {/* Portfolio filter tab end */}
+            </div>
 
             {/* Portfolio items start */}
 
@@ -129,36 +145,70 @@ const CommonPortfilo = ({ condition, items }) => {
 
             {/* Portfolio modal start */}
 
-          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="outline-none flex items-center p-4 md:p-8 rounded-2xl my-8">
-  <div className="w-full md:w-10/12 lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg">
-    <div className="overflow-y-scroll max-h-[80vh] no-scrollbar">
-      {/* close button */}
-      <BsXCircle onClick={() => setIsOpen(false)} className="text-7xl cursor-pointer absolute right-2 -top-12 md:-right-10 md:-top-6 z-50 text-white transition transform hover:rotate-45 duration-300 ease-in-out" />
-      <h2 className="text-[#9b2e2e] dark:text-white text-4xl text-center font-bold">{singleData.tag} Project</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 my-6">
-        <div className="space-y-2">
-          <p className="dark:text-white flex items-center text-sm lg:text-lg">
-            <FiFilePlus className="sm:text-lg hidden sm:block mr-2 md:text-xl" /> Project:&nbsp;<span className="font-medium">Website</span>
-          </p>
-          <p className="dark:text-white flex items-center text-sm lg:text-lg">
-            <FiCode className="text-lg mr-2 hidden sm:block" /> Languages:&nbsp;<span className="font-medium">{singleData?.langages}</span>
-          </p>
-        </div>
-        <div className="space-y-2">
-          <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-sm lg:text-lg">
-            <FiUser className="text-lg mr-2 hidden sm:block" /> Client:&nbsp;<span className="font-medium">{singleData?.client}</span>
-          </p>
-          <p className="dark:text-white flex items-center text-sm lg:text-lg">
-            <FiExternalLink className="text-lg mr-2 hidden sm:block" /> Preview:&nbsp;<span className="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060] "><a href={singleData?.link} target="_blank" rel="noopener noreferrer">{singleData?.linkText}</a></span>
-          </p>
-        </div>
-      </div>
-      <p className="dark:text-white text-sm lg:text-lg">{singleData?.description}</p>
-      <img className="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src={singleData.img} alt="" />
-    </div>
-  </div>
-</Modal>
-
+            <Modal
+              isOpen={isOpen}
+              onRequestClose={() => setIsOpen(false)}
+              className="outline-none flex items-center p-4 md:p-8 rounded-2xl my-8"
+            >
+              <div className="w-full md:w-10/12 lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg">
+                <div className="overflow-y-scroll max-h-[80vh] no-scrollbar">
+                  {/* close button */}
+                  <BsXCircle
+                    onClick={() => setIsOpen(false)}
+                    className="text-7xl cursor-pointer absolute right-2 -top-12 md:-right-10 md:-top-6 z-50 text-white transition transform hover:rotate-45 duration-300 ease-in-out"
+                  />
+                  <h2 className="text-[#9b2e2e] dark:text-white text-4xl text-center font-bold">
+                    {singleData.tag} Project
+                  </h2>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 my-6">
+                    <div className="space-y-2">
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiFilePlus className="sm:text-lg hidden sm:block mr-2 md:text-xl" />{" "}
+                        Project:&nbsp;
+                        <span className="font-medium">Website</span>
+                      </p>
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiCode className="text-lg mr-2 hidden sm:block" />{" "}
+                        Languages:&nbsp;
+                        <span className="font-medium">
+                          {singleData?.langages}
+                        </span>
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-sm lg:text-lg">
+                        <FiUser className="text-lg mr-2 hidden sm:block" />{" "}
+                        Client:&nbsp;
+                        <span className="font-medium">
+                          {singleData?.client}
+                        </span>
+                      </p>
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiExternalLink className="text-lg mr-2 hidden sm:block" />{" "}
+                        Preview:&nbsp;
+                        <span className="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060] ">
+                          <a
+                            href={singleData?.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {singleData?.linkText}
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <p className="dark:text-white text-sm lg:text-lg">
+                    {singleData?.description}
+                  </p>
+                  <img
+                    className="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
+                    src={singleData.img}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </Modal>
 
             {/* Portfolio modal end */}
           </div>

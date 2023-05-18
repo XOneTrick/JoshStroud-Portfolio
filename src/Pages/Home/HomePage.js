@@ -43,7 +43,7 @@ const HomePage = () => {
             alt=""
           />
 
-          <h2 className="mt-2 mb-2 text-7xl font-eczar dark:text-white">
+          <h2 className="mt-4 mb-4 text-4xl sm:text-7xl font-eczar dark:text-white">
             Joshua Stroud
           </h2>
           <p className="mt-2 mb-2 font-ubuntu text-2xl italic text-[#666666]  dark:text-[#acacac]">
