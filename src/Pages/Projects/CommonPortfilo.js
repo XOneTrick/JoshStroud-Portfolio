@@ -59,8 +59,10 @@ const CommonPortfilo = ({ condition, items }) => {
     <>
       <PageTitle title="Portfolio"></PageTitle>
       {/* End pagetitle */}
-      <div className="position : absolute; width:100%;
-  height:100%; z-index:-1;">
+      <div
+        className="position : absolute; width:100%;
+  height:100%; z-index:-1;"
+      >
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -68,54 +70,37 @@ const CommonPortfilo = ({ condition, items }) => {
           options={backgroundLight}
         />
         <section className="bg-white  lg:rounded-2xl bg-transparent dark:bg-transparent">
-          <div className="relative container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
+          <div className="relative container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
-              <h2 className="after-effect  after:left-48  lg:mt-0">
+              <h2 className="dark:text-white mt-6 text-4 sm:text-8xl font-poppins font-medium">
+                {" "}
+                {/*resize*/}
                 Portfolio
               </h2>
 
-              {/* Portfilo fillter tab start */}
-
+              {/* Portfolio filter tab start */}
               <ul
-                className={`${
-                  item === 2 ? "mt-[30px] " : "mt-[40px]"
-                } flex w-full justify-start md:justify-end  flex-wrap   font-medium`}
+                className={`flex w-full justify-start md:justify-end flex-wrap font-medium mt-${
+                  item === 2 ? "30" : "40"
+                }px`}
               >
-                <li
-                  className={`${
-                    test === "All" ? "text-[#000000]" : "fillter-btn "
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("All")}
-                >
-                  All
-                </li>
-                <li
-                  className={`${
-                    test === "Website" ? "text-[#000000]" : "fillter-btn"
-                  } mr-4 md:mx-4 `}
-                  onClick={() => handleSearch("Website")}
-                >
-                  Websites
-                </li>
-                <li
-                  className={`${
-                    test === "Phone App" ? "text-[#000000]" : "fillter-btn"
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Phone App")}
-                >
-                  Phone Applications
-                </li>
-                <li
-                  className={`${
-                    test === "Logo" ? "text-[#000000]" : "fillter-btn ml-0"
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Logo")}
-                >
-                  University Work
-                </li>
+                {["All", "Website", "Phone App"].map((filter) => (
+                  <li
+                    key={filter}
+                    className={`${
+                      test === filter ? "text-[#000000] dark:text-white" : "filter-btn"
+                    } ${
+                      filter === "Phone App"
+                        ? "mr-4 md:mx-4"
+                        : "ml-0 mr-4 md:mx-4"
+                    }`}
+                    onClick={() => handleSearch(filter)}
+                  >
+                    {filter === "Phone App" ? "Phone Applications" : filter}
+                  </li>
+                ))}
               </ul>
-
-              {/* Portfilo fillter tab start */}
+              {/* Portfolio filter tab end */}
             </div>
 
             {/* Portfolio items start */}
@@ -148,7 +133,7 @@ const CommonPortfilo = ({ condition, items }) => {
                   </span>
                   <h2
                     onClick={() => handleModle(item.id)}
-                    className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#070707] dark:hover:text-[#FA5252] hover:text-5xl dark:text-white mt-2"
+                    className="font-medium cursor-pointer text-xl duration-300 transition sm:hover:text-5xl hover:text-xxl dark:text-white mt-2"
                   >
                     {item?.title}
                   </h2>
@@ -163,44 +148,44 @@ const CommonPortfilo = ({ condition, items }) => {
             <Modal
               isOpen={isOpen}
               onRequestClose={() => setIsOpen(false)}
-              className=" outline-none flex items-center  p-4 md:p-8  rounded-2xl my-8"
+              className="outline-none flex items-center p-4 md:p-8 rounded-2xl my-8"
             >
-              <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
-                <div className=" overflow-y-scroll max-h-[80vh] no-scrollbar ">
+              <div className="w-full md:w-10/12 lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg">
+                <div className="overflow-y-scroll max-h-[80vh] no-scrollbar">
                   {/* close button */}
                   <BsXCircle
                     onClick={() => setIsOpen(false)}
-                    className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
+                    className="text-7xl cursor-pointer absolute right-2 -top-12 md:-right-10 md:-top-6 z-50 text-white transition transform hover:rotate-45 duration-300 ease-in-out"
                   />
-                  <h2 className="text-[#000000] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                  <h2 className="text-[#9b2e2e] dark:text-white text-4xl text-center font-bold">
                     {singleData.tag} Project
                   </h2>
                   <div className="grid grid-cols-1 lg:grid-cols-2 my-6">
                     <div className="space-y-2">
-                      <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
-                        <FiFilePlus className="sm:text-lg hidden sm:block mr-2  md:text-xl" />
-                        Project :&nbsp;{" "}
-                        <span className="font-medium "> Website</span>
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiFilePlus className="sm:text-lg hidden sm:block mr-2 md:text-xl" />{" "}
+                        Project:&nbsp;
+                        <span className="font-medium">Website</span>
                       </p>
-                      <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
-                        <FiCode className="text-lg mr-2 hidden sm:block " />
-                        Langages :&nbsp;
-                        <span className="font-medium ">
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiCode className="text-lg mr-2 hidden sm:block" />{" "}
+                        Languages:&nbsp;
+                        <span className="font-medium">
                           {singleData?.langages}
                         </span>
                       </p>
                     </div>
                     <div className="space-y-2">
-                      <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px]  sm:text-lg ">
-                        <FiUser className="text-lg mr-2 hidden sm:block" />
-                        Client :&nbsp;
-                        <span className="font-medium ">
+                      <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-sm lg:text-lg">
+                        <FiUser className="text-lg mr-2 hidden sm:block" />{" "}
+                        Client:&nbsp;
+                        <span className="font-medium">
                           {singleData?.client}
                         </span>
                       </p>
-                      <p className="dark:text-white flex items-center text-[15px] sm:text-lg ">
-                        <FiExternalLink className="text-lg mr-2 hidden sm:block" />
-                        Preview :&nbsp;
+                      <p className="dark:text-white flex items-center text-sm lg:text-lg">
+                        <FiExternalLink className="text-lg mr-2 hidden sm:block" />{" "}
+                        Preview:&nbsp;
                         <span className="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060] ">
                           <a
                             href={singleData?.link}
@@ -213,11 +198,11 @@ const CommonPortfilo = ({ condition, items }) => {
                       </p>
                     </div>
                   </div>
-                  <p className="dark:text-white  text-2line font-normal text-[15px] sm:text-sm  ">
+                  <p className="dark:text-white text-sm lg:text-lg">
                     {singleData?.description}
                   </p>
                   <img
-                    className="w-full md:h-[450px]  h-auto object-cover rounded-xl mt-6"
+                    className="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
                     src={singleData.img}
                     alt=""
                   />

@@ -37,7 +37,7 @@ const Contact = () => {
         <section className="bg-transparent lg:rounded-2xl dark:bg-transparent">
           <div className="relative container px-4 sm:px-5 md:px-10 lg:px-20">
             <div className="py-12">
-              <h2 className="after-effect after:left-40 mb-[40px]">Contact</h2>
+              <h2 className="after-effect after:left-40 mt-6 mb-[40px]">Contact</h2>
               <div className="lg:flex gap-x-20">
                 <div className="w-full lg:w-[40%] xl:w-[30%] space-y-6">
                   {/* Contact Infomation */}
