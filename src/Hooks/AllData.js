@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 import work1 from "../assets/images/work_images/1.jpg";
 import work2 from "../assets/images/work_images/2.jpg";
 import work3 from "../assets/images/work_images/3.jpg";
+import work4 from "../assets/images/work_images/4.jpg";
 
 // works small images
 import workSmall1 from "../assets/images/work_images/small/1.jpg";
 import workSmall2 from "../assets/images/work_images/small/2.jpg";
 import workSmall3 from "../assets/images/work_images/small/3.jpg";
+import workSmall4 from "../assets/images/work_images/small/4.jpg";
 
 import icon1 from "../assets/images/icons/icon-2.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
@@ -94,23 +96,11 @@ const AllData = () => {
 
   // Elements for protfilo section
   const workItems = [
-    {
-      id: "1",
-      tag: "Phone App",
-      title: "Loo-Cate",
-      img: work1,
-      imgSmall: workSmall1,
-      bg: "#FFF0F0",
-      client: "AUT",
-      langages: "Typescript, React Native",
-      linkText: "Unavailable",
-      description:
-        "The Loo-Cate application was developed as a collaborative project to fulfill an assignment for a software development course at Auckland University of Technology. Its primary aim was to enable users to locate the highest-quality public restrooms in their vicinity while also providing them with the opportunity to contribute to a public database of ratings and reviews.",
-    },
+    
 
     {
-      id: "2",
-      tag: "Website",
+      id: "1",
+      tag: "Websites",
       title: "Nagche Art School",
       img: work2,
       imgSmall: workSmall2,
@@ -124,8 +114,8 @@ const AllData = () => {
     },
 
     {
-      id: "3",
-      tag: "Website",
+      id: "2",
+      tag: "Websites",
       title: "Portfolio Website",
       img: work3,
       imgSmall: workSmall3,
@@ -136,6 +126,33 @@ const AllData = () => {
       linkText: "www.joshstroudportfolio.com",
       description:
         "Created with React and Javascript, this portfolio website is designed to establish an online presence for myself and showcase my development abilities. The website serves as a comprehensive platform for displaying my skills, experience, and accomplishments in a visually appealing manner. Furthermore, I aim to keep it updated with future developments to ensure that it accurately reflects my current expertise and capabilities.",
+    },
+    {
+      id: "3",
+      tag: "Websites",
+      title: "Spotify Clone",
+      img: work4,
+      imgSmall: workSmall4,
+      bg: "#F4F4FF",
+      client: "Myself",
+      langages: "TypeScript, React",
+      link: "https://spotify-clone-six-beige.vercel.app/",
+      linkText: "spotify-clone-six-beige.vercel.app/",
+      description:
+        "Created with React and Javascript, this portfolio website is designed to establish an online presence for myself and showcase my development abilities. The website serves as a comprehensive platform for displaying my skills, experience, and accomplishments in a visually appealing manner. Furthermore, I aim to keep it updated with future developments to ensure that it accurately reflects my current expertise and capabilities.",
+    },
+    {
+      id: "4",
+      tag: "Phone App",
+      title: "Loo-Cate",
+      img: work1,
+      imgSmall: workSmall1,
+      bg: "#FFF0F0",
+      client: "AUT",
+      langages: "Typescript, React Native",
+      linkText: "Unavailable",
+      description:
+        "The Loo-Cate application was developed as a collaborative project to fulfill an assignment for a software development course at Auckland University of Technology. Its primary aim was to enable users to locate the highest-quality public restrooms in their vicinity while also providing them with the opportunity to contribute to a public database of ratings and reviews.",
     },
   ];
   const [data, setData] = useState(workItems);

@@ -81,10 +81,10 @@ const CommonPortfilo = ({ condition, items }) => {
               {/* Portfolio filter tab start */}
               <ul
                 className={`flex w-full justify-start md:justify-end flex-wrap font-medium mt-${
-                  item === 2 ? "30" : "40"
+                  item === 4
                 }px`}
               >
-                {["All", "Website", "Phone App"].map((filter) => (
+                {["All", "Websites", "Phone App"].map((filter) => (
                   <li
                     key={filter}
                     className={`${
@@ -109,6 +109,8 @@ const CommonPortfilo = ({ condition, items }) => {
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column"
+              columns={4}
+
             >
               {data.slice(0, items).map((item) => (
                 <div
