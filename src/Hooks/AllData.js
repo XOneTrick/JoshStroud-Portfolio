@@ -134,12 +134,12 @@ const AllData = () => {
       img: work4,
       imgSmall: workSmall4,
       bg: "#F4F4FF",
-      client: "Myself",
+      client: "Myself and Friends",
       langages: "TypeScript, React",
       link: "https://spotify-clone-six-beige.vercel.app/",
-      linkText: "spotify-clone-six-beige.vercel.app/",
+      linkText: "www.spotify-clone.com",
       description:
-        "Created with React and Javascript, this portfolio website is designed to establish an online presence for myself and showcase my development abilities. The website serves as a comprehensive platform for displaying my skills, experience, and accomplishments in a visually appealing manner. Furthermore, I aim to keep it updated with future developments to ensure that it accurately reflects my current expertise and capabilities.",
+        "Created with React, TypeScript, Supabase and intergrating a Stripe payment system, I created this Spotify clone in order to host my friends music mixes. This website presents the basic functionality of Spotify and its styling.",
     },
     {
       id: "4",
