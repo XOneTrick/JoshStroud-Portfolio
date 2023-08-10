@@ -4,12 +4,14 @@ import work1 from "../assets/images/work_images/1.jpg";
 import work2 from "../assets/images/work_images/2.jpg";
 import work3 from "../assets/images/work_images/3.jpg";
 import work4 from "../assets/images/work_images/4.jpg";
+import work5 from "../assets/images/work_images/5.jpg";
 
 // works small images
 import workSmall1 from "../assets/images/work_images/small/1.jpg";
 import workSmall2 from "../assets/images/work_images/small/2.jpg";
 import workSmall3 from "../assets/images/work_images/small/3.jpg";
 import workSmall4 from "../assets/images/work_images/small/4.jpg";
+import workSmall5 from "../assets/images/work_images/small/5.jpg";
 
 import icon1 from "../assets/images/icons/icon-2.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
@@ -112,9 +114,23 @@ const AllData = () => {
       description:
         "The Nagche School of Art and Crafts commissioned this website to showcase its products and services to the public and serve as a marketplace for student-produced goods. Additionally, the platform provides the school with an effective tool for publicity purposes. Developed using React and Typescript, this website serves as a powerful resource for promoting the school and its offerings while also facilitating sales transactions.",
     },
-
     {
       id: "2",
+      tag: "Websites",
+      title: "AI (WIP)",
+      img: workSmall5,
+      imgSmall: work5,
+      bg: "#F4F4FF",
+      client: "Myself and Friends",
+      langages: "TypeScript, React",
+      link: "https://ai-companion-wheat.vercel.app/",
+      linkText: "www.stroudbot.com",
+      description:
+        "CURRENT WORK IN PROGRESS -- FEATURES COMPLETED : CHAT AND CODE GENERATION. FEATURES TO BE COMPLETED : IMAGE, VIDEO AND MUSIC GENERATION.",
+    },
+
+    {
+      id: "3",
       tag: "Websites",
       title: "Portfolio Website",
       img: work3,
@@ -128,7 +144,7 @@ const AllData = () => {
         "Created with React and Javascript, this portfolio website is designed to establish an online presence for myself and showcase my development abilities. The website serves as a comprehensive platform for displaying my skills, experience, and accomplishments in a visually appealing manner. Furthermore, I aim to keep it updated with future developments to ensure that it accurately reflects my current expertise and capabilities.",
     },
     {
-      id: "3",
+      id: "4",
       tag: "Websites",
       title: "Spotify Clone",
       img: work4,
@@ -142,7 +158,7 @@ const AllData = () => {
         "Created with React, TypeScript, Supabase and intergrating a Stripe payment system, I created this Spotify clone in order to host my friends music mixes. This website presents the basic functionality of Spotify and its styling.",
     },
     {
-      id: "4",
+      id: "5",
       tag: "Phone App",
       title: "Loo-Cate",
       img: work1,
